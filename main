@@ -1,16 +1,23 @@
 #Learn Classes by Doing
 
-class Ret:
+import random
+import time
 
-    def __init__(self, name, hp):
+
+
+class Retainer:
+
+    def __init__(self, name, hp, attack, armor):
         self.name = name
         self.hp = hp
+        self.attack = attack
+        self.armor = armor
         
 
-    def givewounds(self, damage):
+    def givewounds(self, attack, damage):
         pass
 
-    def getwounds(self, damage):
+    def getwounds(self, armor, damage):
         pass
 
 
@@ -54,8 +61,19 @@ def evaluator(x):
 
 
 def menu():
+    choice = 0
     print('(C)reate Retainer, (F)ight Retainers, (E)valuate Retainer,'
           '(L)ist Retainers')
+    choice = input('---> ')
+    if choice == c:
+        pass
+    if choice == f:
+        pass
+    if choice == e:
+        pass
+    if choice == l:
+        pass
+    
           
     
     
