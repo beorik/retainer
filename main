@@ -1,0 +1,69 @@
+#Learn Classes by Doing
+
+class Ret:
+
+    def __init__(self, name, hp):
+        self.name = name
+        self.hp = hp
+        
+
+    def givewounds(self, damage):
+        pass
+
+    def getwounds(self, damage):
+        pass
+
+
+class WarBand:
+
+    def __init__(self, retainers):
+        pass
+        
+
+
+
+def clash():
+    pass
+    
+
+def placeholder():
+    pass
+    
+
+def evaluator(x):
+    evaluation = 0
+    if x >= 100:
+        evaluation = ('Excellent')
+    elif x >= 80:
+        evaluation = ('Good')
+    elif x >= 60:
+        evaluation = ('Fair')
+    elif x >= 40:
+        evaluation = ('Poor')
+    elif x >= 20:
+        evaluation = ('In a Bad Way')
+    elif x >= 0:
+        evaluation = ('Deadish')
+    else:
+        evaluation = ('Dead')
+    print(evaluation)
+    return evaluation
+
+
+
+
+
+def menu():
+    print('(C)reate Retainer, (F)ight Retainers, (E)valuate Retainer,'
+          '(L)ist Retainers')
+          
+    
+    
+
+def main():
+    menu()
+
+main()
+
+    
+    
