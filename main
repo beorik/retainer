@@ -20,7 +20,7 @@ class Retainer:
 
     def getwounds(self, armor, damage):
         hp_loss = damage - armor
-        self.hp = self.hp - hp_loss
+        self.hp -= hp_loss
         return self.hp
 
     def status():
