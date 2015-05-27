@@ -2,6 +2,7 @@
 
 import random
 import time
+import math
 
 
 
@@ -17,9 +18,15 @@ class Retainer:
     def givewounds(self, attack, damage):
         pass
 
-    def getwounds(self, armor, damage):
-        pass
+       def getwounds(self, armor, damage):
+        hp_loss = damage - armor
+        self.hp = self.hp - hp_loss
 
+    def status():
+        print ('Name: ' + self.name)
+        print ('HP: ' + self.hp)
+        print ('Attack: ' + self.attack)
+        print ('Armor: ' + self.armor)
 
 class WarBand:
 
