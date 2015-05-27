@@ -6,7 +6,7 @@ import math
 
 
 
-class Retainer:
+class Retainer(object):
 
     def __init__(self, name, hp, attack, armor):
         self.name = name
@@ -30,7 +30,7 @@ class Retainer:
         print ('Attack: ' + self.attack)
         print ('Armor: ' + self.armor)
 
-class WarBand:
+class WarBand(object):
 
     def __init__(self, retainers):
         pass
