@@ -18,9 +18,10 @@ class Retainer:
     def givewounds(self, attack, damage):
         pass
 
-       def getwounds(self, armor, damage):
+    def getwounds(self, armor, damage):
         hp_loss = damage - armor
         self.hp = self.hp - hp_loss
+        return self.hp
 
     def status():
         print ('Name: ' + self.name)
