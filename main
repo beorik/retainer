@@ -15,8 +15,9 @@ class Retainer:
         self.armor = armor
         
 
-    def givewounds(self, attack, damage):
-        pass
+    def givewounds(self, attack, hp):
+        damage = attack * (hp / 100)
+        return damage
 
     def getwounds(self, armor, damage):
         hp_loss = damage - armor
