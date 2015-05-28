@@ -6,14 +6,16 @@ import math
 
 placeholder = 0
 
-class Retainer(object):    #The core of the game! The humans that fight and die
+retainer_list = []
+
+class Retainer(object):    #The core of the game! The digital humans that fight and die
 
     def __init__(self, name, hp, attack, armor):
         self.name = name
         self.hp = hp
         self.attack = attack
         self.armor = armor
-        
+            #Need a line in here where the retainer is added to the retainer_list
 
     def givewounds(self, attack, hp):    #Damage output is affected by healthiness
         damage = attack * (hp / 100)
@@ -68,6 +70,21 @@ def evaluator(x):    #This function is to evaluate the health of a retainer, but
         evaluation = ('Dead')
     print(evaluation)
     return evaluation
+    
+def create_custom_retainer():    #The function to create a new retainer from the console
+    name = input('Name the Retainer: ')
+    hp = input('Assign Hit Points: ')
+    attack = input('Assign Attack: ')
+    armor = input('Assign Armor: ')
+    r = Retainer(name, hp, attack, armor)
+    return r
+    
+
+def evaluate_retainer():    #Returns vitals of a retainer
+    print('Evaluate Which Retainer?'
+    
+    
+    
 
 
 
@@ -75,11 +92,11 @@ def evaluator(x):    #This function is to evaluate the health of a retainer, but
 
 def menu():    #The menu!
     choice = 0
-    print('(C)reate Retainer, (F)ight Retainers, (E)valuate Retainer,'
+    print('(C)reate Custom Retainer, (F)ight Retainers, (E)valuate Retainer,'
           '(L)ist Retainers')
     choice = input('---> ')
     if choice == c:
-        pass
+        create_custom_retainer()
     if choice == f:
         pass
     if choice == e:
