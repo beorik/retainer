@@ -81,7 +81,9 @@ def create_custom_retainer():    #The function to create a new retainer from the
     
 
 def evaluate_retainer():    #Returns vitals of a retainer
-    print('Evaluate Which Retainer?'
+    print retainer_list
+    print('Evaluate Which Retainer? ')
+    
     
     
     
