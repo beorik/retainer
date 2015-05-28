@@ -4,9 +4,9 @@ import random
 import time
 import math
 
+placeholder = 0
 
-
-class Retainer(object):
+class Retainer(object):    #The core of the game! The humans that fight and die
 
     def __init__(self, name, hp, attack, armor):
         self.name = name
@@ -15,7 +15,7 @@ class Retainer(object):
         self.armor = armor
         
 
-    def givewounds(self, attack, hp):
+    def givewounds(self, attack, hp):    #Damage output is affected by healthiness
         damage = attack * (hp / 100)
         return damage
 
@@ -41,12 +41,16 @@ class WarBand(object):
 def clash():
     pass
     
+def placeholder_iterator():    #This works with the placeholder function to generate endless names
+    placeholder += 1
+    return placeholder
 
-def placeholder():
-    pass
+def placeholder():    #This is a generator for endless names of 'placeholder1' iterating the number
+    placeholder_iterator()
+    return('placeholder' + placeholder)
     
 
-def evaluator(x):
+def evaluator(x):    #This function is to evaluate the health of a retainer, but not give exact value
     evaluation = 0
     if x >= 100:
         evaluation = ('Excellent')
@@ -69,7 +73,7 @@ def evaluator(x):
 
 
 
-def menu():
+def menu():    #The menu!
     choice = 0
     print('(C)reate Retainer, (F)ight Retainers, (E)valuate Retainer,'
           '(L)ist Retainers')
